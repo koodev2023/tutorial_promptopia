@@ -34,7 +34,9 @@ const Feed = () => {
     );
   };
 
-  const handleSearchChange = (e) => {};
+  const handleSearchChange = (e) => {
+    setSearchText(e.target.value);
+  };
 
   useEffect(() => {
     const fetchPosts = async () => {
